@@ -30,7 +30,7 @@ $(function() {
 }());
 
 // Accordion
-$('.accordion__toggles').on('click', function() {
-  $(this).siblings('.accordion__list').height($($(this).siblings('.accordion__list p')).height());
+$('.accordion__toggle').on('click', function() {
+  $(this).siblings('.accordion__list').height(((this).siblings('.accordion__list p')).height());
   $('.accordion__list').not($(this).siblings('.accordion__list')).removeClass('cc--open');
 });
