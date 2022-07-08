@@ -31,6 +31,7 @@ $(function() {
 
 // Accordion
 $('.accordion__toggle').on('click', function() {
+    console.log('hello');
   $(this).siblings('.accordion__list').height(((this).siblings('.accordion__list p')).height());
   $('.accordion__list').not($(this).siblings('.accordion__list')).removeClass('cc--open');
 });
